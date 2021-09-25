@@ -1,0 +1,91 @@
+.nav{
+  height: 315px;
+  width: full;
+  margin: 0 auto;
+  //background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .container{
+      margin: 0 auto;
+      height: 240px;
+      width: 540px ;
+     // background-color: beige;
+      position: relative;
+      //bottom: 200px;
+      right: 140px;
+  }
+
+  &__buttons{
+      width: 400px;
+      height: 100px; 
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+     // background-color: orange;
+      position: relative;
+      margin: 0 auto;
+      //padding-bottom: 40px;
+     
+      a{
+          text-decoration: none;
+          font-size: 14px;
+          padding: 10px;
+          text-align: center;
+          color: black;
+         
+      }
+      
+
+    }
+
+    h1{
+       // background-color: aqua;
+        width: 540px;
+        height: 100px; 
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 46px;
+    }
+
+  &__logo{
+      height: 260px;
+      width: 260px;
+      background-image: linear-gradient(
+        to right,  
+          rgba(0, 0, 0, 0.0),
+          rgba(0, 0, 0, 0.0)
+        ),
+      url("../img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      object-fit: fill;
+     
+     
+      
+    
+      
+  }
+}
+@media (max-width: 980px) { 
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .container{
+            left: 5px;
+            margin: 0 auto;
+            
+        }
+        &__logo{
+            display: none;
+        }
+    }
+
+
+}

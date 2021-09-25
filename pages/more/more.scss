@@ -1,0 +1,138 @@
+.more{
+    height: 2350px;
+    width: full;
+    
+    .container{
+        height: 1340px;
+        margin: 0 auto;
+        width: full;
+        background-color: black;
+
+        &__head{
+            width:430px ;
+            color: white;
+            height: 240px;
+            text-align: center;
+            line-height: 240px;
+           // background-color: blue;
+            margin: 0 auto;
+
+        }
+
+        &__flex{
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           width: 1000;
+           //background-color: yellow;
+            height: 1100px;
+            &__info{
+
+                .head{
+                    height: 263px;
+                    h1{
+                        line-height: 263px;
+                        font-weight: 700;
+                        font-size: 50px;
+                    }
+                    h4{
+                        position: relative;
+                        bottom: 110px;
+                    }
+                    border-bottom: solid;
+                    border-bottom-color: #110A17;
+                    border-width: 6px;
+
+
+                }
+                height: 960px;
+                width: 500px;
+                background-color: #1a1a1a;
+                text-align: center;
+                color: white;
+
+                ul{
+                    list-style-type: none;
+                    line-height:75px ;
+                    .pain{
+                        border-bottom: none;
+                    }
+
+                    li{
+                        justify-content: center;
+                        //width: 450px;
+                        border-bottom: dotted gray;
+
+                        a{
+                            text-decoration: none;
+                            color: orangered;
+                            border: solid 2px;
+                            padding: 15px;
+                           
+                        }
+                    }
+                }
+
+    
+
+            }
+
+        }
+    }
+
+    .hero{
+        width: full;
+        background-image: linear-gradient(
+          to right,  
+            rgba(0, 0, 0, 0.0),
+            rgba(0, 0, 0, 0.0)
+          ),
+        url("../img/more-hero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        h1{
+            color: white;
+            text-align: center;
+            width: 700px;
+        }
+        iframe{
+            width: 1000px;
+            height: 550px;
+
+        }
+        a{
+            text-decoration: none;
+            color: orangered;
+            border: solid 2px;
+            padding: 15px;
+           
+        }
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .more{
+       height: 3640px;
+        .container{
+            height: 2600px;
+
+            &__flex{
+                height: 2100px;
+                flex-direction: column;
+            }
+        }
+        .hero{
+            iframe{
+                width: 700px;
+            }
+        }
+    }
+}

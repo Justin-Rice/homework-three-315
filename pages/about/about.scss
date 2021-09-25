@@ -1,0 +1,113 @@
+.about{
+    width: 100%;
+    height: 1100px;
+    &__band{
+        background-color: #003C53;
+        height: 140px;
+        h1{
+            color: white;
+            text-align: center;
+            line-height: 140px;
+        }
+
+    }
+    &__band--two{
+        background-color: white;
+        h1{
+            color: black;
+            text-align: center;
+            line-height: 140px;
+        }
+    }
+
+    .hero--about{
+        background-image: linear-gradient(
+          to right,  
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+        url("../img/about-hero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:100% ;
+
+        //background-color: red;
+        height: 500px;
+        .container{
+            width: 900px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            h1{
+             
+            }
+            p{
+                font-size: 25px;
+            }
+            a{
+                text-decoration: none;
+                color: orangered;
+                border: solid 2px;
+                padding: 15px;
+            }
+        }
+
+    }
+    .hero--home2{
+        background-image: linear-gradient(
+          to right,  
+            rgba(238, 234, 234, 0),
+            rgba(238, 234, 234, 0)
+          ),
+        url("../img/home-hero2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 378px;
+        background-size:cover ;
+
+        .flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            width: full;
+            height: 250px;
+
+            .about-info{
+                //background-color: aliceblue;
+                align-items: center;
+
+                height: 220px;
+                width: 330px;
+               p{
+                   font-size: 20px;
+               }
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .about{
+        height: 1500px;
+        .hero--about{
+            .container{
+                width: 700px;
+            }
+        }
+        .hero--home2{
+            height: 800px;
+            background-size:cover;
+            .flex-container{
+                height: 800px;
+                flex-direction: column;
+            }
+        }
+    }
+
+}

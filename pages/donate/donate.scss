@@ -1,0 +1,126 @@
+.donate{
+    width: full;
+    height: 650px;
+
+    .band{
+        height: 300px;
+        background-color:#96CC80 ;
+        display: flex;
+        align-items: center;
+
+
+        .flex-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            width: 1000px;
+            margin: 0 auto;
+            height: 150px;
+           // background-color: rebeccapurple;
+            text-align: center;
+            h1{
+                font-weight: 200;
+            }
+        }
+        
+
+    }
+    .hero--home2{
+        background-image: linear-gradient(
+            to right,  
+              rgba(238, 234, 234, 0),
+              rgba(238, 234, 234, 0)
+            ),
+          url("../img/home-hero2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 378px;
+          background-size:cover ;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          form{
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              flex-direction: column;
+              height: 200px;
+              width: 850px;
+              //background-color: royalblue;
+              .container{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  a{
+                      text-align: center;
+                      text-decoration: none;
+                      height: 50px;
+                      width: 400px;
+                      border: solid;
+                      color: lightblue;
+                      border-radius: 8px;
+                      padding-left: 10px;
+                      font-size: 30px;
+                      line-height: 50px;
+                  }
+              }
+              label{
+                  font-size: 40px;
+              }
+              input{
+                  width: 800px;
+                  height: 60px;
+                  border-radius: 8px;
+
+              }
+              a{
+                  width: 800px;
+                  text-align: center;
+                  height: 60px;
+                  line-height: 60px;
+                  border: solid #231F20;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  color: white;
+                  font-size: 30px;
+              }
+              #black{
+                background-color: #231F20;
+
+
+              }
+
+          }
+
+    }
+}
+
+@media (max-width: 1000px) {
+    .donate{
+        .band{
+
+            .flex-container{
+                width: 600px;
+            }
+        }
+
+        .hero--home2{
+            form{
+                width: 600px;
+                .container{
+                    a{
+                        width: 280px;
+                    }
+                }
+                input{
+                    width:600px;
+                }
+                a{
+                    width: 600px;
+                }
+            }
+        }
+    }
+
+}
